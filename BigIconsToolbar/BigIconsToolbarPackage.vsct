@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+
+	<Commands package="guPackage">
+		<Menus>
+			<!-- Menu -->
+			<Menu guid="guCmdSet" id="idMenu" priority="0x0000" type="Menu">
+				<Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+				<Strings>
+					<ButtonText>Big Icons Toolbar</ButtonText>
+				</Strings>
+			</Menu>
+
+			<!-- Toolbar -->
+			<Menu guid="guCmdSet" id="idToolbar" type="Toolbar">
+				<CommandFlag>DefaultDocked</CommandFlag>
+				<Strings>
+					<ButtonText>Big Icons Toolbar</ButtonText>
+				</Strings>
+			</Menu>
+		</Menus>
+
+		<Groups>
+			<!-- Menu -->
+			<Group guid="guCmdSet" id="grMenu1" priority="0x0601">
+				<Parent guid="guCmdSet" id="idMenu"/>
+			</Group>
+			<Group guid="guCmdSet" id="grMenu2" priority="0x0602">
+				<Parent guid="guCmdSet" id="idMenu"/>
+			</Group>
+			<Group guid="guCmdSet" id="grMenu3" priority="0x0603">
+				<Parent guid="guCmdSet" id="idMenu"/>
+			</Group>
+			<Group guid="guCmdSet" id="grMenu4" priority="0x0604">
+				<Parent guid="guCmdSet" id="idMenu"/>
+			</Group>
+			<Group guid="guCmdSet" id="grMenu5" priority="0x0605">
+				<Parent guid="guCmdSet" id="idMenu"/>
+			</Group>
+
+			<!-- Toolbar -->
+			<Group guid="guCmdSet" id="grToolbar1" priority="0x0701">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+			</Group>
+			<Group guid="guCmdSet" id="grToolbar2" priority="0x0702">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+			</Group>
+			<Group guid="guCmdSet" id="grToolbar3" priority="0x0703">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+			</Group>
+			<Group guid="guCmdSet" id="grToolbar4" priority="0x0704">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+			</Group>
+			<Group guid="guCmdSet" id="grToolbar5" priority="0x0705">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="guCmdSet" id="idStartWindow" priority="0x0101" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guStartWindow" id="imStartWindow" />
+				<Strings>
+					<ButtonText>Start Window</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idAddNewItem" priority="0x0102" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guAddNewItem" id="imAddNewItem" />
+				<Strings>
+					<ButtonText>Add New Item</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idNewFolder" priority="0x0103" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guNewFolder" id="imNewFolder" />
+				<Strings>
+					<ButtonText>New Folder</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idSaveAll" priority="0x0104" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guSaveAll" id="imSaveAll" />
+				<Strings>
+					<ButtonText>Save All</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idUndo" priority="0x0105" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guUndo" id="imUndo" />
+				<Strings>
+					<ButtonText>Undo</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idRedo" priority="0x0106" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guRedo" id="imRedo" />
+				<Strings>
+					<ButtonText>Redo</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idProperties" priority="0x0107" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guProperties" id="imProperties" />
+				<Strings>
+					<ButtonText>Properties Window</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idOptions" priority="0x0108" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guOptions" id="imOptions" />
+				<Strings>
+					<ButtonText>Options</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idNuGet" priority="0x0109" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guNuGet" id="imNuGet" />
+				<Strings>
+					<ButtonText>Manage NuGet Packages</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idCleanSolution" priority="0x0110" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guCleanSolution" id="imCleanSolution" />
+				<Strings>
+					<ButtonText>Clean Solution</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idRebuildSolution" priority="0x0111" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guRebuildSolution" id="imRebuildSolution" />
+				<Strings>
+					<ButtonText>Rebuild Solution</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idCancelBuild" priority="0x0112" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guCancelBuild" id="imCancelBuild" />
+				<Strings>
+					<ButtonText>Cancel</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idBuildSolution" priority="0x0113" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guBuildSolution" id="imBuildSolution" />
+				<Strings>
+					<ButtonText>Build Solution</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idDebug" priority="0x0114" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guDebug" id="imDebug" />
+				<Strings>
+					<ButtonText>Debug</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guCmdSet" id="idRun" priority="0x0115" type="Button">
+				<Parent guid="guCmdSet" id="idToolbar"/>
+				<Icon guid="guRun" id="imRun" />
+				<Strings>
+					<ButtonText>Run</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+
+		<Bitmaps>
+			<Bitmap guid="guStartWindow" href="Resources\StartWindow.png" usedList="imStartWindow"/>
+
+			<Bitmap guid="guAddNewItem" href="Resources\AddNewItem.png" usedList="imAddNewItem"/>
+			<Bitmap guid="guNewFolder" href="Resources\NewFolder.png" usedList="imNewFolder"/>
+			<Bitmap guid="guSaveAll" href="Resources\Save.png" usedList="imSaveAll"/>
+
+			<Bitmap guid="guUndo" href="Resources\Undo.png" usedList="imUndo"/>
+			<Bitmap guid="guRedo" href="Resources\Redo.png" usedList="imRedo"/>
+
+			<Bitmap guid="guProperties" href="Resources\Properties.png" usedList="imProperties"/>
+			<Bitmap guid="guOptions" href="Resources\Options.png" usedList="imOptions"/>
+			<Bitmap guid="guNuGet" href="Resources\NuGet.png" usedList="imNuGet"/>
+
+			<Bitmap guid="guCleanSolution" href="Resources\CleanSolution.png" usedList="imCleanSolution"/>
+			<Bitmap guid="guRebuildSolution" href="Resources\Rebuild.png" usedList="imRebuildSolution"/>
+			<Bitmap guid="guCancelBuild" href="Resources\CancelBuild.png" usedList="imCancelBuild"/>
+			<Bitmap guid="guBuildSolution" href="Resources\BuildSolution.png" usedList="imBuildSolution"/>
+			<Bitmap guid="guDebug" href="Resources\Debug.png" usedList="imDebug"/>
+			<Bitmap guid="guRun" href="Resources\Run.png" usedList="imRun"/>
+		</Bitmaps>
+	</Commands>
+
+
+	<CommandPlacements>
+		<!-- Menu -->
+		<CommandPlacement guid="guCmdSet" id="idStartWindow" priority="0x0101">
+			<Parent guid="guCmdSet" id="grMenu1" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idAddNewItem" priority="0x0102">
+			<Parent guid="guCmdSet" id="grMenu2" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idNewFolder" priority="0x0103">
+			<Parent guid="guCmdSet" id="grMenu2" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idSaveAll" priority="0x0104">
+			<Parent guid="guCmdSet" id="grMenu2" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idUndo" priority="0x0105">
+			<Parent guid="guCmdSet" id="grMenu3" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idRedo" priority="0x0106">
+			<Parent guid="guCmdSet" id="grMenu3" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idProperties" priority="0x0107">
+			<Parent guid="guCmdSet" id="grMenu4" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idOptions" priority="0x0108">
+			<Parent guid="guCmdSet" id="grMenu4" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idNuGet" priority="0x0109">
+			<Parent guid="guCmdSet" id="grMenu4" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idCleanSolution" priority="0x0110">
+			<Parent guid="guCmdSet" id="grMenu5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idRebuildSolution" priority="0x0111">
+			<Parent guid="guCmdSet" id="grMenu5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idCancelBuild" priority="0x0112">
+			<Parent guid="guCmdSet" id="grMenu5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idBuildSolution" priority="0x0113">
+			<Parent guid="guCmdSet" id="grMenu5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idDebug" priority="0x0114">
+			<Parent guid="guCmdSet" id="grMenu5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idRun" priority="0x0115">
+			<Parent guid="guCmdSet" id="grMenu5" />
+		</CommandPlacement>
+
+		<!-- Toolbar -->
+		<CommandPlacement guid="guCmdSet" id="idStartWindow" priority="0x0101">
+			<Parent guid="guCmdSet" id="grToolbar1" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idAddNewItem" priority="0x0102">
+			<Parent guid="guCmdSet" id="grToolbar2" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idNewFolder" priority="0x0103">
+			<Parent guid="guCmdSet" id="grToolbar2" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idSaveAll" priority="0x0104">
+			<Parent guid="guCmdSet" id="grToolbar2" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idUndo" priority="0x0105">
+			<Parent guid="guCmdSet" id="grToolbar3" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idRedo" priority="0x0106">
+			<Parent guid="guCmdSet" id="grToolbar3" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idProperties" priority="0x0107">
+			<Parent guid="guCmdSet" id="grToolbar4" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idOptions" priority="0x0108">
+			<Parent guid="guCmdSet" id="grToolbar4" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idNuGet" priority="0x0109">
+			<Parent guid="guCmdSet" id="grToolbar4" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idCleanSolution" priority="0x0110">
+			<Parent guid="guCmdSet" id="grToolbar5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idRebuildSolution" priority="0x0111">
+			<Parent guid="guCmdSet" id="grToolbar5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idCancelBuild" priority="0x0112">
+			<Parent guid="guCmdSet" id="grToolbar5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idBuildSolution" priority="0x0113">
+			<Parent guid="guCmdSet" id="grToolbar5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idDebug" priority="0x0114">
+			<Parent guid="guCmdSet" id="grToolbar5" />
+		</CommandPlacement>
+		<CommandPlacement guid="guCmdSet" id="idRun" priority="0x0115">
+			<Parent guid="guCmdSet" id="grToolbar5" />
+		</CommandPlacement>
+	</CommandPlacements>
+
+
+	<Symbols>
+		<GuidSymbol name="guPackage" value="{95f679db-d2d8-4a24-898d-33719b9c7c64}" />
+
+		<GuidSymbol name="guCmdSet" value="{99ea3419-d3e9-44f5-915d-932c95dbb020}">
+			<!-- Menu -->
+			<IDSymbol name="idMenu" value="0x1100" />
+			<!-- Menu groups -->
+			<IDSymbol name="grMenu1" value="0x1101" />
+			<IDSymbol name="grMenu2" value="0x1102" />
+			<IDSymbol name="grMenu3" value="0x1103" />
+			<IDSymbol name="grMenu4" value="0x1104" />
+			<IDSymbol name="grMenu5" value="0x1105" />
+
+			<!-- Toolbar -->
+			<IDSymbol name="idToolbar" value="0x1010" />
+			<!-- Toolbar groups -->
+			<IDSymbol name="grToolbar1" value="0x1011" />
+			<IDSymbol name="grToolbar2" value="0x1012" />
+			<IDSymbol name="grToolbar3" value="0x1013" />
+			<IDSymbol name="grToolbar4" value="0x1014" />
+			<IDSymbol name="grToolbar5" value="0x1015" />
+
+			<!-- Commands -->
+			<IDSymbol name="idStartWindow" value="0x0101" />
+			<IDSymbol name="idAddNewItem" value="0x0102" />
+			<IDSymbol name="idNewFolder" value="0x0103" />
+			<IDSymbol name="idSaveAll" value="0x0104" />
+			<IDSymbol name="idUndo" value="0x0105" />
+			<IDSymbol name="idRedo" value="0x0106" />
+			<IDSymbol name="idProperties" value="0x0107" />
+			<IDSymbol name="idOptions" value="0x0108" />
+			<IDSymbol name="idNuGet" value="0x0109" />
+			<IDSymbol name="idCleanSolution" value="0x0110" />
+			<IDSymbol name="idRebuildSolution" value="0x0111" />
+			<IDSymbol name="idCancelBuild" value="0x0112" />
+			<IDSymbol name="idBuildSolution" value="0x0113" />
+			<IDSymbol name="idDebug" value="0x0114" />
+			<IDSymbol name="idRun" value="0x0115" />
+		</GuidSymbol>
+
+		<!-- Images -->
+		<GuidSymbol name="guStartWindow" value="{3167bf78-85cc-4b28-9eed-c6c2882dc001}">
+			<IDSymbol name="imStartWindow" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guAddNewItem" value="{3167bf78-85cc-4b28-9eed-c6c2882dc002}">
+			<IDSymbol name="imAddNewItem" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guNewFolder" value="{3167bf78-85cc-4b28-9eed-c6c2882dc003}">
+			<IDSymbol name="imNewFolder" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guSaveAll" value="{3167bf78-85cc-4b28-9eed-c6c2882dc004}">
+			<IDSymbol name="imSaveAll" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guUndo" value="{3167bf78-85cc-4b28-9eed-c6c2882dc005}">
+			<IDSymbol name="imUndo" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guRedo" value="{3167bf78-85cc-4b28-9eed-c6c2882dc006}">
+			<IDSymbol name="imRedo" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guProperties" value="{3167bf78-85cc-4b28-9eed-c6c2882dc007}">
+			<IDSymbol name="imProperties" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guOptions" value="{3167bf78-85cc-4b28-9eed-c6c2882dc008}">
+			<IDSymbol name="imOptions" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guNuGet" value="{3167bf78-85cc-4b28-9eed-c6c2882dc009}">
+			<IDSymbol name="imNuGet" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guCleanSolution" value="{3167bf78-85cc-4b28-9eed-c6c2882dc010}">
+			<IDSymbol name="imCleanSolution" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guRebuildSolution" value="{3167bf78-85cc-4b28-9eed-c6c2882dc011}">
+			<IDSymbol name="imRebuildSolution" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guCancelBuild" value="{3167bf78-85cc-4b28-9eed-c6c2882dc012}">
+			<IDSymbol name="imCancelBuild" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guBuildSolution" value="{3167bf78-85cc-4b28-9eed-c6c2882dc013}">
+			<IDSymbol name="imBuildSolution" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guDebug" value="{3167bf78-85cc-4b28-9eed-c6c2882dc014}">
+			<IDSymbol name="imDebug" value="1"/>
+		</GuidSymbol>
+		<GuidSymbol name="guRun" value="{3167bf78-85cc-4b28-9eed-c6c2882dc015}">
+			<IDSymbol name="imRun" value="1"/>
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
