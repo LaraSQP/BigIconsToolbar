@@ -10,7 +10,7 @@ This repository holds the simplest extension that achieves this goal. The code i
 
 Clone the code, review it, compile it, and run the extension. It should work with `vs2022` and `vs2026` provided the `Visual Studio Extension Development` workload is installed.
 
-Alternatively, download the binaries from the `Releases` tab (or here).
+Alternatively, download the binaries from the `Releases` tab (or [here](https://github.com/LaraSQP/BigIconsToolbar/releases/download/1.0/BigIconsToolbar.vsix)).
 
 The screenshot shows a toolbar with the default icons above a second toolbar with the big (ugly) icons from this extension. Both call the same built-in functions.
 
